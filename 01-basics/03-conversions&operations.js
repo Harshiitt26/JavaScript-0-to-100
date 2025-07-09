@@ -12,7 +12,7 @@ const value4InNumber = Number(value4)
 const value5InNumber = Number(value5)
 
 console.log([ // Number() will convert anything to number but real value will not be number
-    "Conversion to NUMBERS:" , typeof value1InNumber , typeof value2InNumber , typeof value3InNumber, typeof value4InNumber, typeof value5InNumber 
+    typeof value1InNumber , typeof value2InNumber , typeof value3InNumber, typeof value4InNumber, typeof value5InNumber 
 ])
 
 console.log([
@@ -31,5 +31,16 @@ const item2InBoolean = Boolean(item2)
 const item3InBoolean = Boolean(item3)
 const item4InBoolean = Boolean(item4)
 const item5InBoolean = Boolean(item5)
-console.log([ "Conversion to BOOLEAN:" , typeof item1InBoolean , typeof item2InBoolean , typeof item3InBoolean , typeof item4InBoolean , typeof item5InBoolean])
+console.log([ typeof item1InBoolean , typeof item2InBoolean , typeof item3InBoolean , typeof item4InBoolean , typeof item5InBoolean])
 console.log([item1InBoolean , item2InBoolean , item3InBoolean , item4InBoolean , item5InBoolean])
+
+// ********************** OPERATIONS **************************
+
+console.log([3+2 , 3-2 , 3*2, 3**2 , 3/2 , 3%2 ])
+console.log([1+1 , "1"+"1" , "1"+2 , 2+"1", "1"+2+2 , 2+2+"1" ])
+console.log([true , +true  , +false , false , +"" ]) // ""is treated as false
+
+let x1 = x2 = 5, y = x1++, z= ++x2;
+console.log([x1 , y , x2 , z]) 
+// postfix increases the value but returns the old one
+// prefix increases the value and also returns new one
