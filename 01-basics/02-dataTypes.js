@@ -34,3 +34,19 @@ console.log([typeof myFruits , typeof myObj , typeof myFunction])
 // PRIMITIVE DATA TYPES - 7 - Number , String , Null , Undefined , Boolean , Symbol , BigInt
 
 // REFERENCE (Non-Primitive) - 3 - Array , Objects , Functions
+
+// *************** MEMORY in JavaScript *********************
+// Stack for Primitive (Copy) & Heap for Non-Primitive (refrence of original value)
+/* A change in primitive datatype will not affect the original value eg text.toLowerCase() while a change in non-primitive datatype will affect the original value eg */
+let name1 = "harshit"
+let name2 = name1
+name2 = "komal" // a copy value was assigned to name2 and its is changed , doesnot affect original value
+console.log([name1,name2])
+
+let person1 = {
+    name: "harshit",
+    age: 12
+}
+let person2 = person1 // reference to original value was assigned and when change the original value also changed.
+person2.name = "komal"
+console.log([person1,person2])
