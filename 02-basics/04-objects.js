@@ -31,3 +31,13 @@ const users = [
     {id:3}
 ]
 console.log(users[2].id)
+
+// ********** DESTRUCTURING OF AN OBJECT *************
+const profile = {
+    name: "Harshit",
+    age: 20,
+    male: true
+}
+
+const {name , age , male:M} = profile
+console.log(name , age , M)
